@@ -1,22 +1,22 @@
-import path from 'path'
-import Inspect from 'vite-plugin-inspect'
-import { defineConfig } from 'vite'
-import { projRoot } from './.vitepress/utils/paths'
-import type { Alias } from 'vite'
+import path from "path";
+import Inspect from "vite-plugin-inspect";
+import { defineConfig } from "vite";
+import { projRoot } from "./.vitepress/utils/paths";
+import type { Alias } from "vite";
 
 // 设置路径别名
-const alias: Alias[] = []
-if (process.env.DOC_ENV !== 'production') {
+const alias: Alias[] = [];
+if (process.env.DOC_ENV !== "production") {
   alias.push(
     {
       find: /^element-plus(\/(es|lib))?$/, //
-      replacement: path.resolve(projRoot, 'packages/element-plus/index.ts'),
+      replacement: path.resolve(projRoot, "packages/element-plus/index.ts"),
     },
     {
       find: /^element-plus\/(es|lib)\/(.*)$/,
-      replacement: `${path.resolve(projRoot, 'packages')}/$2`,
+      replacement: `${path.resolve(projRoot, "packages")}/$2`,
     }
-  )
+  );
 }
 
 export default defineConfig({
@@ -28,24 +28,24 @@ export default defineConfig({
     },
   },
   resolve: {
-    alias,
+    // alias,
   },
   plugins: [Inspect()],
   optimizeDeps: {
     include: [
-      'vue',
-      'markdown-it',
-      'clipboard-copy',
-      '@vueuse/core',
-      'axios',
-      'nprogress',
-      '@element-plus/icons-vue',
-      'dayjs',
-      'memoize-one',
-      'async-validator',
-      'lodash',
-      '@popperjs/core',
-      'normalize-wheel-es',
+      "vue",
+      "markdown-it",
+      "clipboard-copy",
+      "@vueuse/core",
+      "axios",
+      "nprogress",
+      "@element-plus/icons-vue",
+      "dayjs",
+      "memoize-one",
+      "async-validator",
+      "lodash",
+      "@popperjs/core",
+      "normalize-wheel-es",
     ],
   },
-})
+});
