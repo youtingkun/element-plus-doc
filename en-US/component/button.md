@@ -11,11 +11,11 @@ Commonly used button.
 
 123
 
-<!-- :::demo Use `type`, `plain`, `round` and `circle` to define Button's style.
+:::demo Use `type`, `plain`, `round` and `circle` to define Button's style.
 
 button/basic
 
-::: -->
+:::
 
 ## Button Attributes
 
