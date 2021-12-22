@@ -25,6 +25,7 @@
     "element-plus": "npm:element-plus@latest",
     "lodash": "^4.17.21",
     "memoize-one": "^6.0.0",
+    "naive-ui": "^2.23.1",
     "normalize-wheel-es": "^1.1.1",
     "normalize.css": "8.0.1",
     "nprogress": "0.2.0",

@@ -7,6 +7,7 @@
     <el-button type="warning">Warning</el-button>
     <el-button type="danger">Danger</el-button>
     <el-button>中文</el-button>
+    <n-button type="primary">Primary</n-button>
   </el-row>
 
   <el-row>
@@ -44,5 +45,5 @@ import {
   Message,
   Star,
   Delete,
-} from '@element-plus/icons-vue'
+} from "@element-plus/icons-vue";
 </script>
