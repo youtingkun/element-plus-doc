@@ -9,8 +9,6 @@ Commonly used button.
 
 ## Basic usage
 
-123
-
 :::demo Use `type`, `plain`, `round` and `circle` to define Button's style.
 
 button/basic
